@@ -52,7 +52,7 @@ Here are some screenshots of the application:
 
 ## Demo
 
-To experience the app, you can access the [Mobile CV Application Demo](appetize.io-link-here) via Appetize.io.
+To experience the app, you can access the [Mobile CV Application Demo]([appetize.io-link-here](https://appetize.io/app/fq4pqmeq3ec2f5ctet3umtf3oe?device=pixel4&osVersion=11.0&scale=75)) via Appetize.io.
 
 ## Setup Instructions
 
