@@ -29,8 +29,8 @@ class ProgressBarCustom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double parsedPercentage = double.tryParse(percentage) ?? 0.0;
-    final double progressWidth =
-        MediaQuery.of(context).size.width * (parsedPercentage / 100);
+    // final double progressWidth =
+    //     MediaQuery.of(context).size.width * (parsedPercentage / 100);
 
     return Container(
       padding: const EdgeInsets.only(bottom: 25.0),

@@ -7,16 +7,16 @@ import '../Widgets/progress_bar_custom.dart';
 import '../ui/appstyle.dart';
 import '../ui/constants.dart';
 import '../utils/sizeconfig.dart';
-import 'edit_profile_screen.dart';
+import 'edit_cv_details_screen.dart';
 
-class AboutMePage extends StatefulWidget {
-  const AboutMePage({super.key});
+class CvViewScreen extends StatefulWidget {
+  const CvViewScreen({super.key});
 
   @override
-  State<AboutMePage> createState() => _AboutMePageState();
+  State<CvViewScreen> createState() => _CvViewScreenState();
 }
 
-class _AboutMePageState extends State<AboutMePage> {
+class _CvViewScreenState extends State<CvViewScreen> {
   String selectedTab = 'aboutMe';
   String slackName = 'Zinniee'; // Define and initialize slackName
   String gitHubURL = 'Zinniie'; // Define and initialize gitHubURL
@@ -275,7 +275,8 @@ class _AboutMePageState extends State<AboutMePage> {
                                                   height: 45,
                                                   width: 45,
                                                   decoration: BoxDecoration(
-                                                      color: Color(0xffA36FF6),
+                                                      color: const Color(
+                                                          0xffA36FF6),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               15.0)),
@@ -288,48 +289,59 @@ class _AboutMePageState extends State<AboutMePage> {
                                                   job.company,
                                                   style: appstyle(
                                                     getProportionateScreenWidth(
-                                                        11),
+                                                        12),
                                                     kWhiteColor,
                                                     FontWeight.w500,
                                                   ),
                                                 ),
-                                                subtitle: Column(
-                                                  children: [
-                                                    Row(
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .spaceBetween,
-                                                      children: [
-                                                        Text(
-                                                          job.role,
-                                                          style: appstyle(
-                                                            getProportionateScreenWidth(
-                                                                11),
-                                                            kWhiteColor,
-                                                            FontWeight.w500,
+                                                subtitle: Padding(
+                                                  padding: EdgeInsets.only(
+                                                      top:
+                                                          getProportionateScreenHeight(
+                                                              6)),
+                                                  child: Column(
+                                                    children: [
+                                                      Row(
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .spaceBetween,
+                                                        children: [
+                                                          Text(
+                                                            job.role,
+                                                            style: appstyle(
+                                                              getProportionateScreenWidth(
+                                                                  11),
+                                                              kWhiteColor,
+                                                              FontWeight.w500,
+                                                            ),
                                                           ),
-                                                        ),
-                                                        Text(
-                                                          job.year,
-                                                          style: appstyle(
-                                                            getProportionateScreenWidth(
-                                                                11),
-                                                            kWhiteColor,
-                                                            FontWeight.w500,
+                                                          Text(
+                                                            job.year,
+                                                            style: appstyle(
+                                                              getProportionateScreenWidth(
+                                                                  11),
+                                                              kWhiteColor,
+                                                              FontWeight.w500,
+                                                            ),
                                                           ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                    Text(
-                                                      job.responsibility,
-                                                      style: appstyle(
-                                                        getProportionateScreenWidth(
-                                                            11),
-                                                        Colors.grey,
-                                                        FontWeight.w500,
+                                                        ],
                                                       ),
-                                                    ),
-                                                  ],
+                                                      SizedBox(
+                                                        height:
+                                                            getProportionateScreenHeight(
+                                                                6),
+                                                      ),
+                                                      Text(
+                                                        job.responsibility,
+                                                        style: appstyle(
+                                                          getProportionateScreenWidth(
+                                                              12),
+                                                          Colors.grey,
+                                                          FontWeight.w500,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
                                                 ),
                                               ),
                                             ],
@@ -344,6 +356,9 @@ class _AboutMePageState extends State<AboutMePage> {
                                     //   // progressGauge: skill.progressGauge,
                                     // );
                                   },
+                                ),
+                                SizedBox(
+                                  height: getProportionateScreenHeight(10),
                                 ),
                                 Text('Proficiencies',
                                     style: appstyle(
@@ -483,7 +498,7 @@ class _AboutMePageState extends State<AboutMePage> {
             final updatedData = await Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => EditProfileScreen(
+                builder: (context) => EditCvScreen(
                   currentName: name, // Pass the current name
                   currentSlackName: slackName, // Pass the current Slack name
                   currentGitHubURL: gitHubURL, // Pass the current GitHub URL

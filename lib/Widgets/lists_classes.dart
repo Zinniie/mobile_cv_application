@@ -60,23 +60,24 @@ class Experience {
 List<Experience> work = [
   Experience(
     company: 'Nabkon Auto Solutions Limited. ',
-    role: 'Cuatomer ',
+    role: 'Customer Support Officer',
     year: 'Jan 2019 - May 2022',
     responsibility:
         'Prioritized delivering outstanding customer experience with a positive and empathetic approach. I maintained customer records and provided information on our products while efficiently managing emails and calls. I successfully met targets, reduced cancellations by 5% through a new strategy, and resolved technical issues for clients at a 90% rate.',
   ),
   Experience(
     company: 'I4G x Zuri Internship',
-    role: 'Intern ',
+    role: 'Intern',
     year: 'May 2022 - Aug 2022',
     responsibility:
-        'During my internship, I gained diverse skills, including developing a file comparison platform with React JS, creating a responsive portfolio website with HTML and CSS, building a Todo app using Django, crafting a simple calculator and countdown timer in JavaScript, developing a library management app with Django Rest Framework and so much more. You can explore my projects on my GitHub profile: https://github.com/zinniie.',
+        'During my internship in fullstack software development, I gained diverse skills, including developing a file comparison platform with React JS, creating a responsive portfolio website with HTML and CSS, building a Todo app using Django, crafting a simple calculator and countdown timer in JavaScript, developing a library management app with Django Rest Framework and so much more. You can explore my projects on my GitHub profile: https://github.com/zinniie.',
   ),
   Experience(
-    company: 'FuelMetics Limited',
+    company: 'FuelMetrics Limited',
     role: 'Mobile Developer ',
     year: 'Aug 2022 - till date',
-    responsibility: 'B.A. International Relations.',
+    responsibility:
+        'I began as an intern in Frontend Web Development and later transitioned to Mobile Development, eventually securing a position as a full-time employee. My experience has involved constructing mobile applications utilizing Flutter and Dart, significantly advancing team productivity through effective use of ClickUp. Collaboration with UI/UX specialists has been a key aspect, ensuring seamless integration of usability and accessibility in the software. As a mobile developer, my responsibilities encompasses overseeing the entire code base, analyzing project requirements to develop functional application components, implementing program logic based on specifications, incorporating feedback from code reviews to meet established standards, interacting with REST API via HTTP client, and successfully deploying the mobile application to both IOS AppStore and Google PlayStore.',
   ),
 ];
 
@@ -84,7 +85,7 @@ List<String> technicalProficiencies = [
   'Microsoft Office Suite (Word, Excel & PowerPoint).',
   'Search Engine Optimization',
   'Digital Marketing',
-  'Customer Relationship Management CRM Software (Salesforce).',
+  'CRM Software (Salesforce).',
   'WordPress',
 ];
 

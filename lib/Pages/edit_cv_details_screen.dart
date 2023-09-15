@@ -7,7 +7,7 @@ import '../Widgets/reusable_textformfield.dart';
 import '../ui/appstyle.dart';
 import '../ui/constants.dart';
 
-class EditProfileScreen extends StatefulWidget {
+class EditCvScreen extends StatefulWidget {
   final String currentName;
   final String currentSlackName;
   final String currentGitHubURL;
@@ -21,7 +21,7 @@ class EditProfileScreen extends StatefulWidget {
   final List<String> currentTechnicalProficiencies;
   final List<Experience> currentExperience;
 
-  const EditProfileScreen({
+  const EditCvScreen({
     super.key,
     required this.currentInterests,
     required this.currentSkills,
@@ -36,10 +36,10 @@ class EditProfileScreen extends StatefulWidget {
   });
 
   @override
-  State<EditProfileScreen> createState() => _EditProfileScreenState();
+  State<EditCvScreen> createState() => _EditCvScreenState();
 }
 
-class _EditProfileScreenState extends State<EditProfileScreen> {
+class _EditCvScreenState extends State<EditCvScreen> {
   final TextEditingController bioController = TextEditingController();
   final TextEditingController interestsController = TextEditingController();
   final TextEditingController nameController = TextEditingController();
@@ -129,10 +129,25 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           backgroundColor: kBackgroundColor,
           appBar: AppBar(
             backgroundColor: kBackgroundColor,
-            title: const Text('Edit Your Profile Details'),
-            bottom: const TabBar(
-              tabs: [
-                Tab(text: 'Personal'),
+            title: Text(
+              'Edit Your Cv Details',
+              style: appstyle(
+                getProportionateScreenWidth(18),
+                kWhiteColor,
+                FontWeight.w600,
+              ),
+            ),
+            bottom: TabBar(
+              indicatorColor: kPurpleColor,
+              labelStyle: appstyle(
+                getProportionateScreenWidth(14),
+                kWhiteColor,
+                FontWeight.w600,
+              ),
+              tabs: const [
+                Tab(
+                  text: 'Personal',
+                ),
                 Tab(text: 'Professional'),
                 Tab(text: 'Educational'),
               ],
@@ -143,6 +158,9 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: [
+                  SizedBox(
+                    height: getProportionateScreenHeight(8),
+                  ),
                   ReusableTextFormField(
                     controller: nameController,
                     labelText: 'Name',
@@ -159,9 +177,15 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     controller: bioController,
                     labelText: 'Bio',
                   ),
+                  SizedBox(
+                    height: getProportionateScreenHeight(16),
+                  ),
                   ReusableTextFormField(
                     controller: interestsController,
                     labelText: 'Interests (comma-separated)',
+                  ),
+                  SizedBox(
+                    height: getProportionateScreenHeight(16),
                   ),
                   Column(
                     children: skillNameControllers.asMap().entries.map((entry) {
@@ -219,6 +243,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                             SizedBox(
                               width: getProportionateScreenWidth(80),
                               child: TextFormField(
+                                keyboardType: TextInputType.number,
                                 controller: skillPercentageControllers[index],
                                 style: appstyle(
                                   getProportionateScreenHeight(14),
@@ -285,9 +310,15 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: [
+                  SizedBox(
+                    height: getProportionateScreenHeight(8),
+                  ),
                   ReusableTextFormField(
                     controller: technicalProficienciesController,
                     labelText: 'Proficiencies (comma-separated)',
+                  ),
+                  SizedBox(
+                    height: getProportionateScreenHeight(16),
                   ),
                   Column(
                     children: experienceCompanyControllers
@@ -316,7 +347,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                             labelText: 'Responsibility',
                           ),
 
-                          SizedBox(
+                          const SizedBox(
                               height:
                                   20.0), // Button to add new education detail
                         ],
@@ -330,9 +361,15 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: [
+                  SizedBox(
+                    height: getProportionateScreenHeight(8),
+                  ),
                   ReusableTextFormField(
                     controller: trainingsCertificationsController,
                     labelText: 'Trainings and certifications (comma-separated)',
+                  ),
+                  SizedBox(
+                    height: getProportionateScreenHeight(16),
                   ),
                   Column(
                     children:
@@ -354,7 +391,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                             labelText: 'Year',
                           ),
 
-                          SizedBox(
+                          const SizedBox(
                               height:
                                   20.0), // Button to add new education detail
                         ],

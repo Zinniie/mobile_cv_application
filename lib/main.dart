@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Pages/about_page.dart';
+import 'Pages/cv_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'CV Mobile',
       initialRoute: 'about',
       routes: {
-        'about': (_) => const AboutMePage(),
+        'about': (_) => const CvViewScreen(),
       },
     );
   }
