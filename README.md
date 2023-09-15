@@ -28,11 +28,13 @@ The Mobile CV Application is designed to showcase a personal CV in a clean and u
 ## Features
 
 1. **CV View Screen**:
+
    - Initial screen upon opening the app.
    - Displays personal and professional details.
    - Pre-filled with default CV information.
 
 2. **Editing Screen**:
+
    - Edit CV details using user-friendly input fields.
    - Dedicated screen for modifying the CV data.
    - Save changes to update the CV.
@@ -52,7 +54,7 @@ Here are some screenshots of the application:
 
 ## Demo
 
-To experience the app, you can access the [Mobile CV Application Demo]([appetize.io-link-here](https://appetize.io/app/fq4pqmeq3ec2f5ctet3umtf3oe?device=pixel4&osVersion=11.0&scale=75)) via Appetize.io.
+To experience the app, you can access the [Mobile CV Application Demo](https://appetize.io/app/fq4pqmeq3ec2f5ctet3umtf3oe?device=pixel4&osVersion=11.0&scale=75) via Appetize.io.
 
 ## Setup Instructions
 
@@ -68,6 +70,7 @@ To set up the Mobile CV Application locally on your development environment, fol
 1. Upon launching the application, the CV View (home/first page) will display pre-filled personal and professional information.
 
 2. To edit the CV details:
+
 - Tap the "Edit Details" button to access the editing screen.
 - Modify the CV particulars using the provided user-friendly fields.
 - Tap "Save" to save the changes and see real-time updates on the CV View screen.
@@ -75,7 +78,6 @@ To set up the Mobile CV Application locally on your development environment, fol
 ## Contributing
 
 Contributions to the Mobile CV Application are welcome! If you'd like to contribute, please follow these guidelines:
+
 - Fork the repository and create a new branch for your contribution.
 - Make your changes and submit a pull request.
-
-
