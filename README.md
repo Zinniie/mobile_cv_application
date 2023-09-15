@@ -1,6 +1,8 @@
 # Mobile CV Application
 
-Welcome to the Mobile CV Application! This Flutter-based mobile application provides a comprehensive and interactive CV presentation platform, allowing users to view and edit personal and professional details conveniently. The app displays essential information like Full name, Slack username, GitHub handle, and a brief personal bio on the initial screen (CV View), providing a well-organized and easily accessible overview of the CV.
+**Task: Mobile CV Application (HNGX Internship Task)**
+
+This Flutter-based mobile application provides a comprehensive and interactive CV presentation platform, allowing users to view and edit personal and professional details conveniently. The app displays essential information like Full name, Slack username, GitHub handle, and a brief personal bio on the initial screen (CV View), providing a well-organized and easily accessible overview of the CV.
 
 ## Table of Contents
 
@@ -43,10 +45,10 @@ The Mobile CV Application is designed to showcase a personal CV in a clean and u
 
 Here are some screenshots of the application:
 
-- Screenshot 1: [Description or Caption](assets/png/screenshot1.PNG)
-- Screenshot 2: [Description or Caption](assets/png/screenshot2.PNG)
-- Screenshot 3: [Description or Caption](assets/png/screenshot3.PNG)
-- Screenshot 4: [Description or Caption](assets/png/screenshot4.PNG)
+![Screenshot 1](assets/png/screenshot1.PNG)
+![Screenshot 2](assets/png/screenshot2.PNG)
+![Screenshot 3](assets/png/screenshot3.PNG)
+![Screenshot 4](assets/png/screenshot4.PNG)
 
 ## Demo
 
